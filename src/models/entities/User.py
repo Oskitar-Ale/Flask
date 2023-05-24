@@ -1,6 +1,6 @@
-from werkzeug.security import check_password_hash,generate_password_hash
-
-class User():
+from werkzeug.security import check_password_hash
+from flask_login import UserMixin
+class User(UserMixin):
 
     def __init__(self, id, username, password, fullname="") -> None:
         self.id = id
@@ -27,5 +27,5 @@ class User():
 #  generate_password_hash
 
 #imprime una palabra para hashearla
-print(generate_password_hash("uwu"))
+# print(generate_password_hash("uwu"))
     
