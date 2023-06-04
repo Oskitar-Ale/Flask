@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/bootstrap.min.css') }}">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+        <br><br>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="" class="form-label">Nombres</label>
+                <input type="" class="form-control" id="lbnombre">
+            </div>
+            <div class="col-md-6">
+                <label for="" class="form-label">Apellidos</label>
+                <input type="" class="form-control" id="lbapellidos">
+            </div>
+            <div class="col-md-6">
+                <label for="" class="form-label">Documento de indetidad</label>
+                <input type="" class="form-control" id="lbdni">
+            </div>
+            <div class="col-md-6">
+                <label for="" class="form-label">Numero celular</label>
+                <input type="" class="form-control" id="lbcel">
+            </div>
+            
+            <div class="col-md-6">
+                <label for="" class="form-label">Correo</label>
+                <input type="" class="form-control" id="lbmail">
+            </div>
+            
+           
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" id="btn-guardar">Guardar</button>
+            </div>
+            <br>
+            <br>
+            <div>
+                <h2>Lista de estudiantes </h2>
+                <table class="table table-hover" id="TablaEstudiantes">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>DNI</th>
+                            <th>Celular</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='./js/negocio.js') }}"></script>
+    <script src="{{ url_for('static', filename='./js/logico.js') }}"></script>
+    
+</body>
+</html>
